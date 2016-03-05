@@ -11,5 +11,6 @@ count0
 
 ## compute horse power (hp) mean by gear type (am)
 aggregate(mtcars$hp, by=list(mtcars$am), FUN=mean)
+tapply(mtcars$hp, mtcars$am, summary)
 
 
