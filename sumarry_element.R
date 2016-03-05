@@ -9,7 +9,7 @@ count0=length(which(mtcars$am==0))
 count1
 count0
 
-## compute mean by gear type (am column)
+## compute horse power (hp) mean by gear type (am)
 aggregate(mtcars$hp, by=list(mtcars$am), FUN=mean)
 
 
